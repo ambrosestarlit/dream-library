@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登場人物 — 夢の頁</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/characters.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@300;400;500&family=IM+Fell+English:ital@0;1&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="chara-list-page">
+
+  <div class="chara-bg">
+    <div class="chara-bg__grid"></div>
+    <div class="chara-bg__vignette"></div>
+  </div>
+
+  <!-- サイトナビゲーション -->
+  <nav class="site-nav site-nav--dark">
+    <a href="../index.html" class="site-nav__item">
+      <span class="nav-en">Works</span>
+      <span class="nav-ja">作品一覧</span>
+    </a>
+    <span class="site-nav__sep">✦</span>
+    <a href="index.html" class="site-nav__item site-nav__item--active">
+      <span class="nav-en">Characters</span>
+      <span class="nav-ja">登場人物</span>
+    </a>
+  </nav>
+
+  <div class="chara-page-wrapper">
+
+    <!-- ページヘッダー -->
+    <header class="chara-list-header">
+      <p class="chara-list-header__en">Characters</p>
+      <h1 class="chara-list-header__title">登場人物</h1>
+      <p class="chara-list-header__sub">神塚学園を舞台に紡がれる物語の主たちを紹介します。</p>
+      <div class="chara-list-header__deco">
+        <span></span><span class="deco-diamond">◆</span><span></span>
+      </div>
+    </header>
+
+    <!-- キャラクターカードグリッド -->
+    <div class="chara-cards-grid">
+
+      <!-- 道弘カード -->
+      <a href="michihiro.html" class="chara-card chara-card--michihiro">
+        <div class="chara-card__bg-accent"></div>
+
+        <!-- イラスト枠 -->
+        <div class="chara-card__illust-frame">
+          <div class="chara-card__illust-inner">
+            <img
+              src="../img/characters/michihiro.png"
+              alt="神塚 道弘"
+              class="chara-card__illust-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <div class="chara-card__illust-placeholder">
+              <span class="placeholder-initial">道弘</span>
+              <p class="placeholder-hint">img/characters/michihiro.png</p>
+            </div>
+          </div>
+          <div class="chara-card__illust-border"></div>
+        </div>
+
+        <!-- 情報 -->
+        <div class="chara-card__info">
+          <div class="chara-card__role">生徒会長 / 学年主席</div>
+          <h2 class="chara-card__name-ja">神塚 道弘</h2>
+          <p class="chara-card__name-read">かみつか みちひろ</p>
+          <div class="chara-card__attrs">
+            <span class="attr-item">17歳</span>
+            <span class="attr-sep">·</span>
+            <span class="attr-item">男性</span>
+          </div>
+          <p class="chara-card__catch">「退屈は罪だ。だが、完璧であることもまた——罪かもしれない」</p>
+          <div class="chara-card__read-more">
+            <span>詳細を見る</span>
+            <svg viewBox="0 0 20 10" fill="none">
+              <path d="M0 5H18M13 1L18 5L13 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- 道明カード -->
+      <a href="michiaki.html" class="chara-card chara-card--michiaki">
+        <div class="chara-card__bg-accent"></div>
+
+        <!-- イラスト枠 -->
+        <div class="chara-card__illust-frame">
+          <div class="chara-card__illust-inner">
+            <img
+              src="../img/characters/michiaki.png"
+              alt="神塚 道明"
+              class="chara-card__illust-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <div class="chara-card__illust-placeholder">
+              <span class="placeholder-initial">道明</span>
+              <p class="placeholder-hint">img/characters/michiaki.png</p>
+            </div>
+          </div>
+          <div class="chara-card__illust-border"></div>
+        </div>
+
+        <!-- 情報 -->
+        <div class="chara-card__info">
+          <div class="chara-card__role">副生徒会長 / 学年次席</div>
+          <h2 class="chara-card__name-ja">神塚 道明</h2>
+          <p class="chara-card__name-read">かみつか みちあき</p>
+          <div class="chara-card__attrs">
+            <span class="attr-item">18歳</span>
+            <span class="attr-sep">·</span>
+            <span class="attr-item">男性</span>
+          </div>
+          <p class="chara-card__catch">「君が思うよりこの世界は退屈だよ。……でも、君は少し面白いね」</p>
+          <div class="chara-card__read-more">
+            <span>詳細を見る</span>
+            <svg viewBox="0 0 20 10" fill="none">
+              <path d="M0 5H18M13 1L18 5L13 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <footer class="site-footer site-footer--dark">
+      <p class="footer-copy">© 2024 夢の頁 All Rights Reserved.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

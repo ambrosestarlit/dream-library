@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>夢小説サイト「スターリット図書館」</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Noto+Serif+JP:wght@300;400;500&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body class="index-page">
+
+  <!-- 背景装飾 -->
+  <div class="bg-ornament bg-ornament--1"></div>
+  <div class="bg-ornament bg-ornament--2"></div>
+  <div class="bg-ornament bg-ornament--3"></div>
+
+  <div class="page-wrapper">
+
+    <!-- ヘッダー -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="site-title-block">
+          <p class="site-subtitle">— 創作夢小説だけをまとめたあなたのための図書館 —</p>
+          <h1 class="site-title">スターリット図書館</h1>
+          <p class="site-catch">Your Name, Your Story.</p>
+        </div>
+      </div>
+      <div class="header-deco"></div>
+    </header>
+
+    <!-- サイトナビゲーション -->
+    <nav class="site-nav">
+      <a href="index.html" class="site-nav__item site-nav__item--active">
+        <span class="nav-en">Works</span>
+        <span class="nav-ja">作品一覧</span>
+      </a>
+      <span class="site-nav__sep">✦</span>
+      <a href="characters/index.html" class="site-nav__item">
+        <span class="nav-en">Characters</span>
+        <span class="nav-ja">登場人物</span>
+      </a>
+    </nav>
+
+    <main class="main-content">
+
+      <!-- 名前入力セクション -->
+      <section class="name-section" id="nameSection">
+        <div class="name-section__inner">
+          <div class="name-section__label">
+            <span class="label-en">Reader's Name</span>
+            <span class="label-ja">読者のお名前</span>
+          </div>
+
+          <div class="name-form">
+            <div class="name-form__fields">
+              <div class="name-field">
+                <label class="name-field__label" for="inputSei">姓</label>
+                <div class="name-field__input-wrap">
+                  <input
+                    type="text"
+                    id="inputSei"
+                    class="name-field__input"
+                    placeholder="山田"
+                    maxlength="10"
+                    autocomplete="off"
+                  >
+                  <span class="name-field__underline"></span>
+                </div>
+              </div>
+
+              <div class="name-field__sep">・</div>
+
+              <div class="name-field">
+                <label class="name-field__label" for="inputMei">名</label>
+                <div class="name-field__input-wrap">
+                  <input
+                    type="text"
+                    id="inputMei"
+                    class="name-field__input"
+                    placeholder="花子"
+                    maxlength="10"
+                    autocomplete="off"
+                  >
+                  <span class="name-field__underline"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="name-form__preview" id="namePreview">
+              <span class="preview-label">登録名：</span>
+              <span class="preview-name" id="previewText">（未入力）</span>
+            </div>
+
+            <button class="name-save-btn" id="saveNameBtn">
+              <span class="btn-text">名前を登録する</span>
+              <span class="btn-icon">✦</span>
+            </button>
+
+            <p class="name-note">※ 入力したお名前はブラウザのみに保存されます。作品内の「#姓#」「#名#」が置き換わります。</p>
+          </div>
+
+          <div class="save-toast" id="saveToast">✦ 名前を登録しました</div>
+        </div>
+      </section>
+
+      <!-- 区切り -->
+      <div class="section-divider">
+        <span class="divider-line"></span>
+        <span class="divider-ornament">❧</span>
+        <span class="divider-line"></span>
+      </div>
+
+      <!-- 作品一覧 -->
+      <section class="works-section">
+        <div class="works-section__header">
+          <span class="works-label-en">Works</span>
+          <h2 class="works-label-ja">作品一覧</h2>
+        </div>
+
+        <div class="works-grid" id="worksGrid">
+
+          <!-- 作品カード 1 -->
+          <a href="works/work01.html" class="work-card" data-work="01">
+            <div class="work-card__inner">
+              <div class="work-card__tag">ＢＬ</div>
+              <h3 class="work-card__title">甘い支配者</h3>
+              <p class="work-card__desc">誰もいない生徒会室。夕陽に染まる双子のキスは、禁断の甘さを帯びて深まっていく。</p>
+              <div class="work-card__meta">
+                <span class="meta-count">ショート</span>
+                <span class="meta-sep">|</span>
+                <span class="meta-update">更新：2026.04.01</span>
+              </div>
+              <div class="work-card__arrow">
+                <span>読む</span>
+                <svg viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 6H22M17 1L22 6L17 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="work-card__border-deco"></div>
+          </a>
+
+          
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-copy">© 2024 夢の頁 All Rights Reserved.</p>
+    </footer>
+
+  </div>
+
+  <script src="js/name.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
